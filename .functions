@@ -1,0 +1,7 @@
+mkcd () {
+  mkdir -p $1 && cd $1
+}
+
+dk_prune () {
+  docker system prune -af --volumes
+}

@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[user]
+	email = kalvin.vasconcellos@gmail.com
+	name = Kalvin Vasconcellos
+[core]
+  eol = lf
+  editor = vim
+[pull]
+	rebase = true

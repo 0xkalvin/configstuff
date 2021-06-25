@@ -1,0 +1,14 @@
+alias doc="cd ~/Documents"
+alias down="cd ~/Downloads"
+alias proj="cd ~/Projects/github"
+alias k=kubectl
+alias dk=docker
+alias dkl=docker logs -f
+alias dke=docker exec -it
+alias dks=docker stop
+alias dkc=docker-compose
+alias zshconfig="vim ~/.zshrc"
+alias reload!="source ~/.zshrc"
+alias lsr='tree -ChDvL $1 $2'
+alias pullall='find . -type d -name .git -execdir git pull -v ";"'
+alias rm='rm -rf'
