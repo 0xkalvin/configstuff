@@ -13,19 +13,10 @@ brew install nano
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Install zsh auto suggestions
-brew install zsh-autosuggestions
-
-# Load zsh auto suggestions 
-echo "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >>~/.zshrc
-source .zshrc
-
-# Install zsh syntax highlight
-brew install zsh-syntax-highlighting
-
-# Load zsh syntax highlight
-echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>~/.zshrc
-source .zshrc
+# Install zsh auto suggestions and zsh syntax highlight
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+# Add plugins=(git zsh-autosuggestions zsh-syntax-highlighting) to ~/.zshrc
 
 # Install powerlevel10k zsh theme
 brew install romkatv/powerlevel10k/powerlevel10k
