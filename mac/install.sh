@@ -9,6 +9,8 @@ sudo xcode-select --install
 
 # Install nano
 brew install nano
+## Install nano syntax highlighting
+curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
